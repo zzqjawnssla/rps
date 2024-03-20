@@ -63,17 +63,18 @@ function App() {
     }
 
   return (
-    <div>
-      <div className="box-container">
-          <Box title="You" item={userSelect} result={userresult}/>
-          <Box title="Computer" item={computerSelect} result={computerresult}/>
+      <div>
+          <div className="box-container">
+              <Box title="You" item={userSelect} result={userresult}/>
+              <h2>vs</h2>
+              <Box title="Computer" item={computerSelect} result={computerresult}/>
+          </div>
+          <div className="button-container">
+              <button onClick={() => game("rock")}>rock</button>
+              <button onClick={() => game("scissor")}>scissor</button>
+              <button onClick={() => game("paper")}>paper</button>
+          </div>
       </div>
-        <div classNmae="button">
-            <button onClick={()=>game("rock")}>rock</button>
-            <button onClick={()=>game("scissor")}>scissor</button>
-            <button onClick={()=>game("paper")}>paper</button>
-        </div>
-    </div>
   );
 }
 

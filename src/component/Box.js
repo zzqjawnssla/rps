@@ -2,7 +2,7 @@ import React from 'react';
 
 const Box = (props) => {
 
-  const boxClass = `box ${props.result ? props.result.toLowerCase() : ''}`;
+  const boxClass = `box ${props.result ? props.result.toLowerCase() : 'default'}`;
   return (
 
       <div className={boxClass}>
