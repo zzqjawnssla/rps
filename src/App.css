@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     width: 300px;
-    height: 300px;
+    height: 200px;
     justify-content: center;
     padding: 50px;
     margin: 10px;
@@ -23,11 +23,16 @@
 
 .button-container button {
     width: 100px; /* Adjust this value as needed */
-    height: 50px; /* Adjust this value as needed */
+    height: 30px; /* Adjust this value as needed */
     margin-right: 20px; /* Adjust this value as needed */
     font-size: 20px; /* Adjust this value as needed */
 }
 
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .tie {
   border-color: black; /* 비길 경우 */

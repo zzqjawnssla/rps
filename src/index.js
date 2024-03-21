@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import AppClass from "./AppClass";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+
+      <h2 className="centered">Fuction componet</h2>
     <App />
+      <h2 className="centered">Class componet</h2>
+      <AppClass />
+
   </React.StrictMode>
 );
 
